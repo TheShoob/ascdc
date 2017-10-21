@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Expert Witness Database - Search Engine</title>
+<link rel="stylesheet" type="text/css" href="page.css">
+</head>
+
+<body>
+    <span class="pageTitle">Expert Witness Database - Search Engine<div class="arrow-down"></div></span>
+    <p>NOTE: If First Name & Last Name are entered, they both must have at least a partial match to render results and if a year is entered, only depositions published that year will be searched.</p>
+    <br>
+    <div class="fWrap">
+        <input type="text" name="UserID" value="Last Name"></input>
+        <input type="text" name="UserID" value="First Name"></input>
+        <input type="text" name="UserID" value="Deposition Year (XXXX)"></input>        
+    </div>
+    <br>
+    <select name="Expert_Type" id="Expert_Type">
+        <option value="0" selected="">Select an Expert Category...</option>
+        <option value="436">Accident Prevention</option>
+        <option value="104">Accident Reconstruction</option>
+    </select>
+    <br>
+    <br>    
+    <div class="fWrap">        
+       <div><input class="btn" type="button" value="Search"><div class="spyglass"></div></input></div>
+    </div>
+</body>
+</html>

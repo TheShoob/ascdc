@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+
+<link rel="stylesheet" type="text/css" href="page.css">
+<script type="text/javascript" src="bodymovin.min.js"></script>
+
+</head>
+
+<body>
+
+	<span class="pageTitle">Page Title</span>
+
+		
+	<div style="width: 350px; height: 350px; background-color: transparent;" id="bodymovin"></div>
+	
+	
+	<h1>This is a test Title</h1><br>
+	<h2>This is a test Title</h2><br>
+	<h3>This is a test Title</h3><br>
+	<h4>This is a test Title</h4><br>
+	<p>
+		This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block This is a text block 
+		<span>This is a span test</span>
+	</p>
+	<span>This is a span test</span>
+	<br><br><br>
+	
+	<div class="boxes r">
+		<div class="box x4"></div><div class="box x4"></div><div class="box x4"></div><div class="box x4"></div>
+	</div>
+	
+	<div class="boxes c">
+		<div class="box x4"></div><div class="box x3"></div><div class="box x2"></div><div class="box x1"></div>
+	</div>
+	
+	<div class="boxes r">
+		<div class="box x4"></div><div class="box x3"></div><div class="box x2"></div><div class="box"></div>
+	</div>
+
+	<div class="boxes b">
+		<div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+	</div>
+
+    <div class="boxes b">
+        <a href="#" class="btn"><svg class="icon30"><use xlink:href="icons.svg#globe-icon"></use></svg><span>ASCDC Event Photo Galleries</span></a>            
+	</div>
+	
+    <div class="boxes b">            
+        <div id="expand" class="expand">
+            <div id="open"><span>Title</span><svg class="icon30X40"><use xlink:href="icons.svg#x-dark-icon"></use></svg></div>
+            <div id="content" class="content">
+					<div class="boxes b">
+							<div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+					</div>
+			</div>
+        </div>
+	</div>  
+	  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="jquery-3.2.1.min.js">\x3C/script>')</script>
+	<script type="text/javascript" src="bodymovin.min.js"></script>	
+    <script>
+        $('document').ready(function() {
+            $('#expand > #open').click(function() {
+                var numberChild = $(this).next().children().length;
+                var heightChild = $(this).next().children().height();
+                var total = (numberChild * heightChild);
+                
+                $(this).parent().toggleClass('open');
+                if ($(this).parent().hasClass('open'))  {
+                    $(this).next().css('max-height', total + 'px');
+                    $(this).children('svg').css('-webkit-transform', 'rotate(45deg)','-moz-transform:', 'rotate(45deg)','-ms-transform', 'rotate(45deg)','-o-transform', 'rotate(45deg)','transform', 'rotate(45deg)');
+                    return false;
+                }
+                else if ($(this).parent().not('open')) {
+                    $(this).next().css('max-height', 0 + 'px');
+                    $(this).children('svg').css('-webkit-transform', 'rotate(0deg)','-moz-transform:', 'rotate(0deg)','-ms-transform', 'rotate(0deg)','-o-transform', 'rotate(0deg)','transform', 'rotate(0deg)');
+                    return false;
+                }
+                e.preventDefault();
+            });
+        });
+		var animData = {
+			wrapper: document.getElementById('bodymovin'),
+			animType: 'html',
+			loop: true,
+			prerender: true,
+			autoplay: true,
+			path: 'data.json'
+
+		};
+		var anim = bodymovin.loadAnimation(animData);
+	</script>
+</body>
+
+</html>

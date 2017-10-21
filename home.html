@@ -1,0 +1,688 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="page.css">
+<style>
+	a {
+		text-decoration: none;
+	}
+
+	.slide {
+		width: 100%;
+		height: 300px;
+		background-color: grey;
+	}
+	
+	.hpb {
+		min-height: 160px;
+		min-width: 250px;
+		max-width: 250px;
+		display: flex;
+	}
+
+	.hpb span {
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 400;
+		color: white;
+		width: 100%;
+		height: auto;
+		margin-top: auto;
+		background-color: red;
+		min-height: 90px;
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+		padding: 0px 5px 10px 5px;
+		font-size: .8em;
+		letter-spacing: .12em;
+	}
+
+	.pn {
+		background-image: url('img/connect.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border: #1234A5 solid thin;
+	}
+
+	.sce {
+		background-image: url('img/books.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border: #644E46 solid thin;
+	}
+
+	.rlam {
+		background-image: url('img/pillars.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border: #5D5D69 solid thin;
+	}
+
+	.lil {
+		background-image: url('img/handshaking.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border: #283E67 solid thin;
+	}
+
+	.pn span {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#223f99+0,223f99+100&0+0,1+100 */
+		background: -moz-linear-gradient(top, rgba(34,63,153,0) 0%, rgba(34,63,153,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(34,63,153,0) 0%,rgba(34,63,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(34,63,153,0) 0%,rgba(34,63,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00223f99', endColorstr='#223f99',GradientType=0 ); /* IE6-9 */
+	}
+
+	.sce span {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#644e46+0,644e46+100&0+0,1+100 */
+		background: -moz-linear-gradient(top, rgba(100,78,70,0) 0%, rgba(100,78,70,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(100,78,70,0) 0%,rgba(100,78,70,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(100,78,70,0) 0%,rgba(100,78,70,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00644e46', endColorstr='#644e46',GradientType=0 ); /* IE6-9 */
+	}
+
+	.rlam span {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5d5d69+0,5d5d69+100&0+0,1+100 */
+		background: -moz-linear-gradient(top, rgba(93,93,105,0) 0%, rgba(93,93,105,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(93,93,105,0) 0%,rgba(93,93,105,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(93,93,105,0) 0%,rgba(93,93,105,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005d5d69', endColorstr='#5d5d69',GradientType=0 ); /* IE6-9 */
+	}
+
+	.lil span {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#283e67+0,283e67+100&0+0,1+100 */
+		background: -moz-linear-gradient(top, rgba(40,62,103,0) 0%, rgba(40,62,103,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(40,62,103,0) 0%,rgba(40,62,103,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(40,62,103,0) 0%,rgba(40,62,103,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00283e67', endColorstr='#283e67',GradientType=0 ); /* IE6-9 */
+	}
+
+
+
+
+
+	
+	/*-------| SLIDER |-------*/
+	.ui-slider-tabs-list-wrapper { 
+	font-family:Arial,sans-serif;
+	margin:0 0 -1px 0;
+	z-index: 50;
+	border-spacing: 0px 0px;
+	}
+	.ui-slider-tabs-list-wrapper.bottom { 
+	margin: 0 0 0 0;
+	}
+	.ui-slider-tabs-list-container { 
+	max-width: 100%;
+	overflow: hidden;
+	}
+	.ui-slider-tabs-list {
+	display: table;
+	padding: 0;
+	margin:0px 0px 6px 0px;
+	list-style: none;
+	width: 100% !important; 
+	}
+	.ui-slider-tabs-list li { 
+	display: table-cell;
+	border-bottom: 1px solid #cfcfcf;
+	border-right: 1px solid #cfcfcf;
+	border-top: 1px solid #cfcfcf;
+	margin: 0;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: green;
+	}
+	.ui-slider-tabs-list li a { 
+	display: block;
+	text-decoration: none;
+	color:#555;
+	text-shadow:0px 1px 0px #fff;
+	margin:0;
+	}
+	.ui-slider-tabs-list li a:hover { 
+	background-color: yellow;
+	}
+
+	.ui-slider-tabs-list li.selected { 
+	border-bottom-color:#fff;
+	border-top-color:#cfcfcf;
+	background-color: blue;
+	}
+	.ui-slider-tabs-list-wrapper.bottom .ui-slider-tabs-list li.selected { 
+	border-top-color: #fff;
+	border-bottom-color: #cfcfcf;
+	}
+	.ui-slider-tabs-list li.selected a { 
+	cursor: default;
+	color: #000;
+	}
+	.ui-slider-tabs-list li:first-of-type { 
+	border-left: 1px solid #cfcfcf;
+	}
+	.ui-slider-tabs-content-container { 
+	position: relative;
+	border: 1px solid #cfcfcf;
+	z-index: 1;
+	overflow: hidden;
+	background-color: #fff;
+	}
+	.ui-slider-tab-content { 
+		position: absolute;
+		display: none;
+		top: 0;
+		left: 0;
+		padding: 10px;
+	}
+	.custom-navigation {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+	}
+	.custom-navigation > * {
+		display: table-cell;
+	}
+	.custom-navigation > a {
+		width: 50px;
+	}
+	.custom-navigation .flex-next {
+		text-align: right;
+	}	
+	/*
+	* jQuery FlexSlider v2.5.0
+	* http://www.woothemes.com/flexslider/
+	*
+	* Copyright 2012 WooThemes
+	* Free to use under the GPLv2 and later license.
+	* http://www.gnu.org/licenses/gpl-2.0.html
+	*
+	* Contributing author: Tyler Smith (@mbmufffin)
+	* 
+	*/
+	/*
+	* FONT-FACE
+	*/
+	@font-face {
+		font-family: 'flexslider-icon';
+		src: url('../fonts/flexslider-icon.eot');
+		src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.ttf') format('truetype'), url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	/* 
+	* RESETS
+	*/
+	.flex-container a:hover,
+	.flex-slider a:hover,
+	.flex-container a:focus,
+	.flex-slider a:focus {
+		outline: none;
+	}
+	.slides,
+	.slides > li,
+	.flex-control-nav,
+	.flex-direction-nav {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.flex-pauseplay span {
+		text-transform: capitalize;
+	}
+	/* 
+	* BASE STYLES
+	*/
+	.flexslider {
+		margin: 0;
+		padding: 0;
+	
+	/*----||My fix for containing the slide and forcing width||*/
+		overflow: hidden;
+		height: 300px;
+	}
+	.flexslider .slides > li {
+		display: none;
+		background-color: grey;
+		min-height: 300px;
+	}
+	.flexslider .slides img {
+		width: 100%;
+		height: auto;
+		display: block;
+		position: relative;
+		top: 0px;
+		margin-top: 0%;
+	}
+	.flexslider .slides:after {
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+	}
+	html[xmlns] .flexslider .slides {
+		display: block;
+	}
+	* html .flexslider .slides {
+		height: 1%;
+	}
+	.no-js .flexslider .slides > li:first-child {
+		display: block;
+	}
+	/* 
+	* DEFAULT THEME
+	*/
+	.flexslider {
+		width: 100%;
+		margin: 0 0 0px;
+		position: relative;
+		zoom: 1;
+	}
+	.flexslider .slides {
+		zoom: 1;
+	}
+	.flexslider .slides img {
+		height: auto;
+		margin-top: 0%;
+	}
+	.flex-viewport {
+		max-height: 300px;
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-ms-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		transition: all 1s ease;
+	}
+	.loading .flex-viewport {
+		max-height: 300px;
+	}
+	.carousel li {
+		margin-right: 5px;
+	}
+	.flex-direction-nav {
+		*height: 0;
+	}
+	.flex-direction-nav a {
+		text-decoration: none;
+		display: block;
+		width: 15px;
+		height: 30px;
+		margin: -20px 0 0;
+		position: absolute;
+		top: 50%;
+		z-index: 10;
+		overflow: hidden;
+		opacity: 1;
+		cursor: pointer;
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+	
+	.flex-direction-nav a:before {
+		font-family: "flexslider-icon";
+		font-size: 0px;
+		display: inline-block;
+		content: '\f001';
+	}
+	.flex-direction-nav a.flex-next:before {
+		width: 0; 
+		height: 0; 
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent; 
+		border-left: 15px solid white;
+	}
+	.flex-direction-nav .flex-prev {
+		margin-top: 95px;
+		right: 50px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.flex-direction-nav .flex-next {
+		margin-top: 95px;
+		right: 10px;
+		text-align: right;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.flex-direction-nav a.flex-prev:before {
+		width: 0; 
+		height: 0; 
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent; 
+		border-right: 15px solid white;
+	}
+	.flexslider:hover .flex-direction-nav .flex-prev {
+		opacity: 1;
+		margin-top: 95px;
+	}
+	.flexslider:hover .flex-direction-nav .flex-prev:hover {
+		opacity: 1;
+	}
+	.flexslider:hover .flex-direction-nav .flex-next {
+		opacity: 1;
+		margin-top: 95px;
+	}
+	.flexslider:hover .flex-direction-nav .flex-next:hover {
+		opacity: 1;
+	}
+	.flex-direction-nav .flex-disabled {
+		opacity: 0!important;
+		filter: alpha(opacity=0);
+		cursor: default;
+	}
+	.flex-pauseplay a {
+		display: block;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		bottom: 5px;
+		left: 10px;
+		opacity: 0.8;
+		z-index: 10;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	.flex-pauseplay a:before {
+		font-size: 20px;
+		display: inline-block;
+	}
+	.flex-pauseplay a:hover {
+		opacity: 1;
+	}
+	.flex-control-nav {
+		top: 270px;
+		z-index: 9;
+		display: flex;
+		justify-content: center;
+		margin-left: 35%;
+		position: relative;
+		bottom: auto;
+	}
+	.flex-control-nav li {
+		margin: 0 6px;
+		display: inline-block;
+		zoom: 1;
+	}
+	.flex-control-paging li a {
+		width: 10px;
+		height: 10px;
+		display: none;
+		background: transparent;
+		background: rgba(255,255,255, .10);
+		cursor: pointer;
+		text-indent: -9999px;
+		-webkit-box-shadow: inset 0 0 3px rgba(255,255,255, 1);
+		-moz-box-shadow: inset 0 0 3px rgba(255,255,255, 1);
+		-o-box-shadow: inset 0 0 3px rgba(255,255,255, 1);
+		box-shadow: inset 0 0 3px rgba(255,255,255, 1);
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
+	}
+	.flex-control-paging li a:hover {
+		background: #FFF;
+		background: rgba(255,255,255, 1);
+	}
+	.flex-control-paging li a.flex-active {
+		background: #FFF;
+		background: rgba(255,255,255, 1);
+		cursor: default;
+	}
+	.flex-control-thumbs {
+		margin: 5px 0 0;
+		position: static;
+		overflow: hidden;
+	}
+	.flex-control-thumbs li {
+		width: 15%;
+		float: left;
+		margin: 0;
+	}
+	.flex-control-thumbs img {
+		width: 100%;
+		height: auto;
+		display: block;
+		opacity: .9;
+		cursor: pointer;
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-ms-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		transition: all 1s ease;
+	}
+	.flex-control-thumbs img:hover {
+		opacity: 1;
+	}
+	.flex-control-thumbs .flex-active {
+		opacity: 1;
+		cursor: default;
+	}
+	.flex-caption {
+		display: flex;
+		flex-direction: column-reverse;
+		position: absolute;
+		top: 0px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.leftSlideArea {
+		display: flex;
+		width: 100%;
+		height: 35%;
+		max-height: 300px;
+		background-color: rgba(7, 64, 124, 0.8);
+		-webkit-box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.3);
+		-o-box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.3);
+		box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.3);
+		flex-direction: row;
+		justify-content: flex-start;
+		align-content: center;
+		padding-left: 10px;
+	}
+	.leftSlideArea a {
+		align-self: center;
+		margin: 0px 30px 0px 0px;
+	}
+	.slideTitle {
+		color: #fff;
+		font-size: 12px;
+		padding: 5px 0px;
+	}
+	.slideSubTitle {
+		color: #fff;
+		font-size: 12px;
+		padding: 5px 0px;
+	}
+	.slideDate {
+		color: #fff;
+		font-size: 12px;
+		padding: 5px 0px;
+	}
+	.rightSlideArea {
+		display: flex;
+		height: 300px;
+	}
+	.slide1 {
+		background-image: url(img/testSlide.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.slide2 {
+		background-image: url(img/testSlide.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.slide3 {
+		background-image: url(img/testSlide.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.slideIconW {
+		display: flex;
+		height: 30px;
+		flex-direction: row;
+		justify-content: space-between;
+		align-self: center; 
+	}
+	.slideIcon {
+		width: 30px;
+		height: 30px;
+		background-color: white;
+	}
+	/* 
+	* RESPONSIVE
+	*/
+	@media (min-width: 860px) {
+
+		.flex-direction-nav .flex-prev {
+			right: 73%;
+
+		}
+		.flex-direction-nav .flex-next {
+			right: 68%;
+		}
+		.flex-direction-nav a {
+			opacity: 0;
+		}
+		.flex-control-paging li a {
+			display: block;
+		}
+		.flex-caption {
+			flex-direction: row;
+			position: absolute;
+			width: 35%;
+			height: 100%;
+		}
+		.leftSlideArea{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			width: 100%;
+			height: 100%;
+			margin: 0px 0px 10px 0px;
+		}
+		.leftSlideArea a {
+			align-self: left;
+			margin: 0px 30px 10px 0px;
+		}
+		.slideIconW {
+			align-self: left; 
+			margin: 10px 0px;
+		}
+		.slideTitle {
+			align-self: left;
+		}
+		.slideSubTitle {
+			align-self: left;
+		}
+		.slideDate {
+			align-self: left;
+		}
+	}
+	/*-------| /SLIDER |-------*/
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="slide">
+		<section class="slider">
+			<div class="flexslider">
+				<ul class="slides">
+
+					<li class="slide2"><!--|| SLIDE ||-->
+						<div class="flex-caption">
+							<div class="leftSlideArea">
+								<a href="#pageConf">
+									<span class="slideTitle"> Annual Conference</span><br>
+									<span class="slideSubTitle">ASCDC test title</span><br>
+									<span class="slideDate">Oct 12-14, 2017</span><br>
+								</a>
+								<div class="slideIconW">
+									<div class="slideIcon"></div>
+									<div class="slideIcon"></div>
+									<div class="slideIcon"></div>
+								</div>								
+							</div>
+							<div class="rightSlideArea">
+							</div>
+						</div>
+					</li><!--|| /SLIDE ||-->
+
+					<li class="slide2"><!--|| SLIDE ||-->
+						<div class="flex-caption">
+							<div class="leftSlideArea">
+								<a href="#pageConf">
+									<span class="slideTitle"> Annual Conference</span><br>
+									<span class="slideSubTitle">ASCDC test title</span><br>
+									<span class="slideDate">Oct 12-14, 2017</span><br>
+								</a>
+							</div>
+							<div class="rightSlideArea">
+							</div>
+						</div>
+					</li><!--|| /SLIDE ||-->
+
+				</ul>
+			</div>
+		</section>
+	</div>
+	
+	<h2>The importance of membership in the Association of Southern California Defense Counsel has never been greater.</h2>
+	<p>Attacks on the civil trial system, and legislated changes to it, have made the practice of law far more confusing and complex than in previous generations. Keeping stride with these changes, and challenging those attacks that threaten the delivery of civil justice, the ASCDC is the only local professional organization that defense attorneys can count on for:</p>
+
+	<div class="boxes r">
+		<a href="" class="box hpb pn">
+			<span>professional Networking</span>
+		</a>
+		<a href="" class="box hpb sce">
+			<span>Specialized Continuing Education</span>
+		</a>
+		<a href="" class="box hpb rlam">
+			<span>Representation in legislative and Appellat Matters</span>				
+		</a>
+		<a href="" class="box hpb lil">
+			<span>Liaison with Industry Leaders</span>		
+		</a>	
+	</div>
+
+	<p>BORN IN 1960, at a time when several lawyers' groups were launched in California, the ASCDC was organized by a small group of Los Angeles defense attorneys who felt it was essential for their professional interest to be independently represented. The ASCDC has since grown to become the nation's preeminent regional defense organization. It now encompasses a diverse group of men and women of all ages, races and religions, who practice from north of Santa Barbara to the Mexican border and from the desert of the inland empire to the shores of Santa Monica.</p>
+	<script src="jquery-3.2.1.min.js"></script>	
+	<script src="jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$('document').ready(function() {
+			$('.flexslider').flexslider({
+				animation: "fade",
+				controlNav: true,
+				directionNav: true,
+				mousewheel: false,
+				controlsContainer: $(".flexslider-container"),
+				customDirectionNav: $(".custom-navigation a"),
+				start: function(slider){
+				$('body').removeClass('loading');
+				}
+			});
+		});
+	</script>
+</body>
+</html>

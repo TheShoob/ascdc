@@ -1,0 +1,14 @@
+{
+  "name": "ascdc",
+  "version": "1.0.0",
+  "description": "ASCDC 2017 Site",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cameron schubert",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-plugin-jquery": "^3.2.1"
+  }
+}

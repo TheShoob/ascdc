@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<!--#include file="inc/inc_DB_Conn.asp" -->
+		<title>ASCDC - Association of Southern California Defense Councel</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+		<div id="container" class="center">
+			<div class="swipeArea"></div>
+			<div id="sidebar-left" class="sidebar">
+				<ul>
+					<div class="logo"><div style="width: 240px; height: 80px; background-color: transparent;" id="bodymovin"></div></div>
+					<li class="navLink"><!--link-->
+						<svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#home.html">Home</a>
+					</li>
+					<li class="navLink"><!--link-->
+						<svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use><use class="underLink" xlink:href="icons.svg#under-icon"></use></svg><a href="#memServices.html">Member Services</a><svg class="plus"><use xlink:href="icons.svg#x-icon"></use></svg>
+					</li>
+					<li class="expandContent"><!--sublinks-->
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#memProfile.html" alt="">Member Profile</a></div>
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#expertWitnessDb.html" alt="">Expert Witness Database</a></div>
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#memRenewals.html" alt="">Membership</a></div>
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#memPhotoGalleries.html" alt="">Member Photo Galleries</a></div>
+					</li>
+					<li class="navLink"><!--link-->
+						<svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use><use class="underLink" xlink:href="icons.svg#under-icon"></use></svg><a href="#verdictMagazine.html">Verdict Magazine</a><svg class="plus"><use xlink:href="icons.svg#x-icon"></use></svg>
+					</li>
+					<li class="expandContent"><!--sublinks-->
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#submitTrialResultsForPublication.html" alt="">Submit Trial Results for Publication</a></div>
+					</li>	
+					<li class="navLink"><!--link-->
+						<svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use><use class="underLink" xlink:href="icons.svg#under-icon"></use></svg><a href="#amicus.html">Amicus</a><svg class="plus"><use xlink:href="icons.svg#x-icon"></use></svg>
+					</li>
+					<li class="expandContent"><!--sublinks-->
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#amicusCommittee.html" alt="">Amicus Committee</a></div>
+					</li>	
+					<li class="navLink"><!--link-->
+						<svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use><use class="underLink" xlink:href="icons.svg#under-icon"></use></svg><a href="#events.html">Events</a><svg class="plus"><use xlink:href="icons.svg#x-icon"></use></svg>
+					</li>
+					<li class="expandContent"><!--sublinks-->
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#annualSeminar.html" alt="">Annual Seminar</a></div>
+					</li>	
+					<li class="navLink"><!--link-->
+						<svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use><use class="underLink" xlink:href="icons.svg#under-icon"></use></svg><a href="#resources.html">Resources</a><svg class="plus"><use xlink:href="icons.svg#x-icon"></use></svg>
+					</li>
+					<li class="expandContent"><!--sublinks-->
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#legProgram.html" alt="">Legislative Program</a></div>
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#memSearch.html" alt="">Member Search</a></div>
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#podcasts.html" alt="">Podcasts</a></div>
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#photos.html" alt="">Photos</a></div>
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#exemplar.html" alt="">Exemplar MIL’s, Briefs and Transcripts</a></div>
+					</li>	
+					<li class="navLink"><!--link-->
+						<svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use><use class="underLink" xlink:href="icons.svg#under-icon"></use></svg><a href="#aboutUs.html">About Us</a><svg class="plus"><use xlink:href="icons.svg#x-icon"></use></svg>
+					</li>
+					<li class="expandContent"><!--sublinks-->
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#contactUs.html" alt="">Contact Us</a></div>
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#officersAndDirectors.html" alt="">Officers and Directors</a></div>
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#appointedCommitteeChairs.html" alt="">Appointed Committee Chairs</a></div>
+					</li>	
+					<li class="navLink"><!--link-->
+						<svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use><use class="underLink" xlink:href="icons.svg#under-icon"></use></svg><a href="#marketplace.html">Marketplace</a><svg class="plus"><use xlink:href="icons.svg#x-icon"></use></svg>
+					</li>
+					<li class="expandContent"><!--sublinks-->
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#vendorMarket.html" alt="">Vendor Market</a></div>
+						<div><svg class="dot"><use class="onLink" xlink:href="icons.svg#on-icon"></use></svg><a href="#memberMarket.html" alt="">Member Market</a></div>
+					</li>	
+					<div class="q-btns" id="q-btn-D">
+						<a href="https://www.facebook.com/Association-of-Southern-California-Defense-Counsel-ASCDC-153842077992834/"><svg><use xlink:href="icons.svg#w-facebook-icon"></use></svg></a>
+						<a href="https://www.linkedin.com/groups/5016867"><svg><use xlink:href="icons.svg#w-linkedin-icon"></use></svg></a>
+						<a href="https://www.youtube.com/channel/UCsj_ILgABrCrDf_ggwB-7oQ"><svg><use xlink:href="icons.svg#w-youtube-icon"></use></svg></a>
+						<a href=""></a>
+						<a href=""></a>
+					</div>
+				</ul>
+			</div>
+			<div id="sidebar-right" class="sidebar">
+				<ul>
+					<div class="box login">
+						<div class="icon"><svg><use xlink:href="icons.svg#user-icon"></use></svg></div>
+						<span>LOGIN</span>
+						<form action="#login.asp" method="post" name="login" id="login">
+							<input type="text" placeholder="Enter Username" name="uname" value="" required>
+							<input type="password" placeholder="Enter Password" name="psw" value="" required>
+							<input type="hidden" name="theSessionID" id="theSessionID" value="<%=Session.SessionID%>">
+							<input type="hidden" name="LoginRedirectReferrer" id="LoginRedirectReferrer" value="<%=Request('LoginRedirectReferrer')%>">
+							<input type="hidden" name="LoginRedirect" id="LoginRedirect" value=1>
+						</form>
+						<button type="forgot" form="login" value="Forgot"><svg><use xlink:href="icons.svg#forgot-icon"></use></svg></button>
+						<button type="submit" form="login" value="Submit"><svg><use xlink:href="icons.svg#login-icon"></use></svg></button>
+					</div>
+					<div class="box events">
+						<div class="icon">
+							<svg><use xlink:href="icons.svg#calendar-icon"></use></svg>
+						</div>
+						<span>EVENTS</span>
+						<div class="event">
+							<a href="#events.html" class="eventDate">SEPT<br>22-23</a><a href="#events.html" class="eventTitle">Professional Liability Conference - Santa Barbara </a><a href="http://www.ascdc.org/PDF/ASCDC%20S%20Barbara%2017%20brochure.pdf" class="eventDoc"><svg><use xlink:href="icons.svg#pdf-icon"></use></svg></a>
+						</div>
+						<div class="event">
+							<a href="#events.html" class="eventDate">OCT<br>13</a><a href="#events.html" class="eventTitle">Brown Bag at LASC with Judge Dan Buckley </a><a href="http://ascdc.org/PDF/Brown%20Bag%20LASC%20Update%20Oct%2017%20flyer.pdf" class="eventDoc"><svg><use xlink:href="icons.svg#pdf-icon"></use></svg></a>
+						</div>						
+						<div class="event">
+							<a href="#events.html" class="eventDate">NOV<br>2</a><a href="#events.html" class="eventTitle">Brown Bag at VCSC with Judges O'Neill and Reiser </a><a href="http://ascdc.org/PDF/Nov-2017-Ventura-Brown-Bag.pdf" class="eventDoc"><svg><use xlink:href="icons.svg#pdf-icon"></use></svg></a>
+						</div>		
+						<div class="event">
+							<a href="#events.html" class="eventDate">NOV<br>16</a><a href="#events.html" class="eventTitle">Hot Topic Education Seminar </a><a href="http://ascdc.org/PDF/ASCDC%20Hot%20Topic%20-%20Howell%2017.pdf" class="eventDoc"><svg><use xlink:href="icons.svg#pdf-icon"></use></svg></a>
+						</div>
+						<div class="event">
+							<a href="#events.html" class="eventDate">NOV<br>30</a><a href="#events.html" class="eventTitle">Construction Defect Seminar & Judicial Reception </a><a href="" class="eventDoc"><svg><use xlink:href="icons.svg#pdf-icon"></use></svg></a>
+						</div>
+						<div class="event">
+							<a href="#events.html" class="eventDate">DEC<br>12</a><a href="#events.html" class="eventTitle">Hot Topic Seminar by ASCDC Lawyer Defense Committee </a><a href="" class="eventDoc"><svg><use xlink:href="icons.svg#pdf-icon"></use></svg></a>
+						</div>
+						<div class="event">
+							<a href="#events.html" class="eventDate">DEC<br>12</a><a href="#events.html" class="eventTitle">Judicial and New Member Reception </a><a href="" class="eventDoc"><svg><use xlink:href="icons.svg#pdf-icon"></use></svg></a>
+						</div>						
+						<div class="event">
+							<a href="#annualSeminar.html" class="eventDate">FEB<br>8-9</a><a href="#annualSeminar.html" class="eventTitle">ASCDC 57th Annual Seminar </a><a href="http://ascdc.org/PDF/ASCDC%20AS18%20early-bird%20postcard.pdf" class="eventDoc"><svg><use xlink:href="icons.svg#pdf-icon"></use></svg></a>
+						</div>		
+						<div class="event">
+							<a href="" class="eventDate">SEPT<br>14-15</a><a href="" class="eventTitle">Litigation Conference </a><a href="" class="eventDoc"><svg><use xlink:href="icons.svg#pdf-icon"></use></svg></a>
+						</div>
+						<!-- <div class="event">
+							<a href="" class="eventDate">AUG<br>20</a><a href="" class="eventTitle">Title of the event </a><a href="" class="eventDoc"><svg><use xlink:href="icons.svg#pdf-icon"></use></svg></a>
+						</div> -->
+					</div>
+					<div class="box ad">
+						<div id="rotator1">
+							<a href="" target="_blank"><img height="80" src="img/ads/ad_02.png" width="300" /></a>
+							<a href="" target="_blank"><img height="80" src="img/ads/ad_03.png" width="300" /></a>
+							<a href="" target="_blank"><img height="80" src="img/ads/ad_04.png" width="300" /></a>
+						</div>
+					</div>
+					<div class="box ad">
+						<div id="rotator2">
+							<a href="" target="_blank"><img height="80" src="img/ads/ad_02.png" width="300" /></a>
+							<a href="" target="_blank"><img height="80" src="img/ads/ad_03.png" width="300" /></a>
+							<a href="" target="_blank"><img height="80" src="img/ads/ad_04.png" width="300" /></a>
+						</div>
+					</div>
+					<a href="#test1.html" class="box locate-a-member"><div class="icon"><svg><use xlink:href="icons.svg#spyglass-icon"></use></svg></div><span>LOCATE A <br>MEMBER</span></a>
+					<a href="#test1.html" class="box listserve"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="icons.svg#listserv-icon"></use></svg></div><span>LISTSERVE <br>OPT IN/OUT</span></a>
+				</ul>
+			</div>
+			<div class="main-content">
+				<div id="menu-area-left" class="menu-area">
+					<div class="menuBtn" id="menu-btn-left">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</div>
+				<div class="q-btns" id="q-btn-M">
+					<a href=""><svg><use xlink:href="icons.svg#facebook-icon"></use></svg></a>
+					<a href=""><svg><use xlink:href="icons.svg#linkedin-icon"></use></svg></a>
+					<a href=""><svg><use xlink:href="icons.svg#youtube-icon"></use></svg></a>
+					<a href=""><svg><use xlink:href="icons.svg#mail-icon"></use></svg></a>
+					<a href=""><svg><use xlink:href="icons.svg#phone-icon"></use></svg></a>
+				</div>
+				<div id="menu-area-right" class="menu-area">
+					<div class="menuBtn" id="menu-btn-right">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div> 
+				</div>
+				<div id="content">
+					<iframe src="home.html" name="contentFrame" id="changeSrc" frameborder="0" scrolling="no" width="100%" alt="main content area"></iframe>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="jquery-3.2.1.min.js">\x3C/script>')</script>
+		<script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+		<script type="text/javascript" src="bodymovin.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<script>
+		var animData = {
+			wrapper: document.getElementById('bodymovin'),
+			animType: 'html',
+			loop: false,
+			prerender: true,
+			autoplay: true,
+			path: 'logo.json'
+		};
+		var anim = bodymovin.loadAnimation(animData);
+	</script>		
+	</body>
+</html>
