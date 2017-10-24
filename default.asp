@@ -108,7 +108,7 @@
 						
 
 						<form action="" method="post" name="login" id="login">
-							<span class="remember">Click to remember login</span><input type="checkbox" id="chkMySaveCookie" name="chkMySaveCookie" value="1" checked>
+							<span class="remember">REMEMBER LOGIN</span><input type="checkbox" id="chkMySaveCookie" name="chkMySaveCookie" value="1" checked>
 				<!--here--> <input type="text" placeholder="Enter Username" name="uname" value="" required>
 							<input type="password" placeholder="Enter Password" name="psw" value="" required>
 							<input type="hidden" name="theSessionID" id="theSessionID" value="<%=Session.SessionID%>">
@@ -156,17 +156,17 @@
 %>
 							
 							<%Else%>
-								<table border="0" cellspacing="2" cellpadding="2" align="center">
+								<table border="0" cellspacing="0" cellpadding="0" align="center" class="forgotBox">
 								<form action="_Login.asp" method="post" name="frmRet" id="frmRet">
 								<tr>
-								<td><font size="1" class="basefont"><strong>Email Address:</strong></font></td>
-								<td><input type="text" name="txtEmail" id="txtEmail" size="15"></td>
+								<!--<td><font size="1" class="basefont"><strong>Email Address:</strong></font></td>-->
+								<td><input type="text" name="txtEmail" id="txtEmail" size="15" placeholder="Enter Email Address"></td>
 								</tr>
 								<input type="hidden" name="varRetrieve" id="varRetrieve" value=1>
 								<input type="hidden" name="varDoIt" id="varDoIt" value=1>
 								<tr>
 								<td colspan="2">
-									<input type="submit" name="LoggOff" value="Retrieve My Login Credentials">
+									<button type="submit" name="sendCred" class="sendCred" value="Retrieve My Login Credentials">Retrieve My Login Credentials</button>
 								</td>
 								</form>
 								</tr>
@@ -328,7 +328,7 @@
 						<span>EVENTS</span>
 			
 						<div class="event">
-							<a href="#events.html" class="eventDate">???NOV<br>2</a><a href="#events.html" class="eventTitle"><span>Brown Bag at VCSC with Judges O'Neill and Reiser</span></a><a href="http://ascdc.org/PDF/Nov-2017-Ventura-Brown-Bag.pdf" class="eventDoc"><svg><use xlink:href="icons.svg#pdf-icon"></use></svg></a>
+							<a href="#events.html" class="eventDate">NOV<br>2</a><a href="#events.html" class="eventTitle"><span>Brown Bag at VCSC with Judges O'Neill and Reiser</span></a><a href="http://ascdc.org/PDF/Nov-2017-Ventura-Brown-Bag.pdf" class="eventDoc"><svg><use xlink:href="icons.svg#pdf-icon"></use></svg></a>
 						</div>
 						<div class="event">
 							<a href="#events.html" class="eventDate">NOV<br>14</a><a href="#events.html" class="eventTitle"><span>Business Development for Women</span></a><a href="http://ascdc.org/PDF/ASCDC%20Biz%20Development%20for%20Women%202017.pdf" class="eventDoc"><svg><use xlink:href="icons.svg#pdf-icon"></use></svg></a>

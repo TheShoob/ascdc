@@ -24,7 +24,7 @@ svg {
 	-ms-transition: 0.4s;
 	-o-transition: 0.4s;
 	transition: 0.4s;
-	background: #ddd;
+	background: #EFEFEF;
 }
 
 .swipeArea {
@@ -173,7 +173,12 @@ svg {
 #container div.sidebar ul li.navLink svg.plus {
 	display: flex;
 	width: 30px;
-	height: 45px;
+	height: 30px;
+	min-width: 30px;
+	margin-right: 5px;
+	border-radius: 15px;
+	background-color: #0B487F;
+	align-self: center;
 	-webkit-transition: all .3s linear;
 	-moz-transition: all .3s linear;
 	-o-transition: all .3s linear;
@@ -280,23 +285,6 @@ select:-webkit-autofill {
 	background-color: rgb(255, 255, 255) !important;
 }
 
-#login input {
-	max-width: 280px;
-	width: 280px;
-	height: 20px;
-	background-color: white;
-	-webkit-rtl-ordering: logical;
-	user-select: text;
-	cursor: auto;
-	padding: 5px;
-	border-width: 0px;
-	border-style: none;
-	border-color: none;
-	border-image: none;
-	border-radius: 0;
-	margin: 5px 5px 0px 5px;
-}
-
 button {
 	padding: 0px;
 	height: 30px;
@@ -356,6 +344,41 @@ button.login {
 	margin: 5px 5px 5px 5px;
 	background-color: #04AB51;
 	float: right;
+}
+
+table.forgotBox {
+	margin: 5px 0px 0px 0px;
+	padding: 5px 0px 0px 0px;
+	border-top: 1px solid #ddd;
+	width: 100%;
+	width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button.sendCred {
+    width: 80%;
+    margin: 10px auto;
+	display: block;
+	background: #777;
+	border-radius: 5px;
+}
+
+#login input, .forgotBox input {
+	max-width: 280px;
+	width: 280px;
+	height: 20px;
+	background-color: white;
+	-webkit-rtl-ordering: logical;
+	user-select: text;
+	cursor: auto;
+	padding: 5px;
+	border-width: 0px;
+	border-style: none;
+	border-color: none;
+	border-image: none;
+	border-radius: 0;
+	margin: 5px 5px 0px 5px;
 }
 
 .box.login button svg {
@@ -427,11 +450,27 @@ a.eventDoc {
 	background-repeat: no-repeat;
 }
 
+.box.locate-a-member div.icon {
+    margin: 5px 0px 0px 5px;
+}
+
+.box.locate-a-member span {
+    padding: 5px 0px 0px 5px;
+}
+
 .box.listserve {
 	background: url(img/listserve-bg.png);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.box.listserve div.icon {
+    margin: 5px 0px 0px 5px;
+}
+
+.box.listserve span {
+    padding: 5px 0px 0px 5px;
 }
 
 .box div.icon {
