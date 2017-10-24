@@ -24,7 +24,7 @@ svg {
 	-ms-transition: 0.4s;
 	-o-transition: 0.4s;
 	transition: 0.4s;
-	background: rgb(119, 14, 14);
+	background: #ddd;
 }
 
 .swipeArea {
