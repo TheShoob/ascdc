@@ -374,6 +374,9 @@
 				</ul>
 			</div>
 			<div class="main-content">
+				<div id="topTitle">
+					<div></div>
+				</div>
 				<div id="menu-area-left" class="menu-area">
 					<div class="menuBtn" id="menu-btn-left">
 						<span class="bar"></span>
@@ -381,13 +384,13 @@
 						<span class="bar"></span>
 					</div>
 				</div>
-				<div class="q-btns" id="q-btn-M">
+				<!--<div class="q-btns" id="q-btn-M">
 					<a href=""><svg><use xlink:href="icons.svg#facebook-icon"></use></svg></a>
 					<a href=""><svg><use xlink:href="icons.svg#linkedin-icon"></use></svg></a>
 					<a href=""><svg><use xlink:href="icons.svg#youtube-icon"></use></svg></a>
 					<a href=""><svg><use xlink:href="icons.svg#mail-icon"></use></svg></a>
 					<a href=""><svg><use xlink:href="icons.svg#phone-icon"></use></svg></a>
-				</div>
+				</div>-->
 				<div id="menu-area-right" class="menu-area">
 					<div class="menuBtn" id="menu-btn-right">
 						<span class="bar"></span>

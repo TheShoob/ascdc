@@ -3,7 +3,7 @@
 
 html {
 	font-family: helvetica;
-	color: #34373A;
+	color: #555;
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -43,24 +43,24 @@ h1, h2, h3, h4 {
 }
 h1 {
     font-size: 1.8em;
-	color: #07407C;
+	color: #555;
 	font-weight: 300;
 	text-transform: uppercase;
 }
 h2 {
     font-size: 1.5em;
-	color: #07407C;
+	color: #555;
 	font-weight: 300;
 	text-transform: uppercase;	
 }
 h3 {
     font-size: 1.3em;
-	color: #07407C;
+	color: #555;
 	font-weight: 300;
 }
 h4 {
     font-size: 1em;
-	color: #07407C;
+	color: #555;
 	font-weight: 500;
 }
 .pageTitle {
@@ -303,7 +303,7 @@ body > .boxes {
 .box {
 	min-height: 30px;
 	min-width: 30px;
-	margin: 5px;
+	margin: 15px;
 }
 .x1 {
 	width: 100%;	
