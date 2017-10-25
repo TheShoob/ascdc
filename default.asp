@@ -401,7 +401,7 @@
 						<div class="bounce2"></div>
 						<div class="bounce3"></div>
 					</div>
-					<iframe src="home.html" name="contentFrame" id="changeSrc" frameborder="0" scrolling="no" width="100%" alt="main content area"></iframe>
+					<iframe src="" name="contentFrame" id="changeSrc" frameborder="0" scrolling="no" width="100%" alt="main content area"></iframe>
 				</div>
 			</div>
 		</div>

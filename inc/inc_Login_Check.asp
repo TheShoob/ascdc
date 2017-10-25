@@ -20,9 +20,9 @@ End If
 'Collect user information from database if logged in
 If LoggedIn = 1 Then
  	If LongtermCookie = 1 Then
-		SQLQuery = "SELECT PeopleID, MemberCode, UserID, FName, LName, Email FROM tblPeople WHERE UserID = '" & Request.Cookies("ASCDC_ID") & "';"
+		SQLQuery = "SELECT PeopleID, MemberCode, MemberType, UserID, FName, LName, Email FROM tblPeople WHERE UserID = '" & Request.Cookies("ASCDC_ID") & "';"
   	Else
-   		SQLQuery = "SELECT PeopleID, MemberCode, UserID, FName, LName, Email FROM tblPeople WHERE UserID = '" & Session("ASCDC_ID") & "';"
+   		SQLQuery = "SELECT PeopleID, MemberCode, MemberType, UserID, FName, LName, Email FROM tblPeople WHERE UserID = '" & Session("ASCDC_ID") & "';"
   	End If
 	Set ASCDCUser = connASCDC.Execute(SQLQuery)
   	'If no UserID match
@@ -38,6 +38,7 @@ If LoggedIn = 1 Then
 		ASCDCMemberID = ASCDCUser("PeopleID")
 		'Response.write("MID = " & ASCDCMemberID)
 		MemberStatus = ASCDCUser("MemberCode")
+		MemberType = ASCDCUser("MenberType")
 		varMemberName = replace(ASCDCUser("FName") & " " & ASCDCUser("LName"), "'", "''")
 		varMemberEmail = ASCDCUser("Email")
 		'varMemberEmail = replace(ASCDCUser("Email"), "'", "''")
